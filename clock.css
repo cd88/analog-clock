@@ -1,0 +1,39 @@
+#secHand {
+	background-color: #AAB;
+	width:4px;
+	height:95px;
+	border-radius: 2px;
+	position: absolute;
+	top:98px;
+	left:98px;
+	transform-origin: 2px 2px;
+	-webkit-transform-origin: 2px 2px;
+	-moz-transform-origin: 2px 2px;
+}
+
+#minHand {
+	background-color: #FFFF00;
+	width:6px;
+	height:80px;
+	border-radius: 3px;
+	position: absolute;
+	top:113px;
+	left:97px;
+	transform-origin: 3px -13px;
+	-webkit-transform-origin: 3px -13px;
+	-moz-transform-origin: 3px -13px;
+}
+
+#hourHand {
+	background-color: #FFFF00;
+	width:60px;
+	height:8px;
+	border-radius: 4px;
+	position: absolute;
+	top:96px;
+	left:130px;
+	transform-origin: -31px 4px;
+	-webkit-transform-origin: -31px 4px;
+	-moz-transform-origin: -31px 4px;
+}
+

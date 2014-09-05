@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+
+
+    <link rel="stylesheet" type="text/css" href="clock.css"> 
     <meta charset="UTF-8">
     <title>World Clock</title>
     <style>
@@ -9,28 +12,49 @@
             padding: 0px;
         }
     </style>
-    <div id="frame">
+    <script src="js/moment.js"></script>
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/script.js"></script>
 
-    </div>
 </head>
-<!-- borrowed from http://www.html5canvastutorials.com/tutorials/html5-canvas-circles/ -->
+<!-- borrowed from http://www.html5canvastutorials.com/tutorials/html5-canvas-circles/ 
+
+Make dodecagonal clock face, minute hand will animate from position to position
+
+-->
 
 <body>
-<canvas id="clock-bg" width="400px" height="200px"></canvas>
+
+<div id="frame">
+</div>
+
+<div id="hourHand">
+</div>
+
+<div id="minHand">
+</div>
+
+<div id="secHand">
+</div>
+
+<canvas id="clock-bg" width="200px" height="200px"></canvas>
+
 <script>
-    var canvas = document.getElementById('myCanvas');
+    var canvas = document.getElementById('clock-bg');
     var context = canvas.getContext('2d');
     var centerX = canvas.width / 2;
     var centerY = canvas.height / 2;
-    var radius = 70;
+    var radius = 96;
 
+    
     context.beginPath();
     context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-    context.fillStyle = 'green';
+    context.fillStyle = "#000000";
     context.fill();
     context.lineWidth = 5;
-    context.strokeStyle = '#003300';
+    context.strokeStyle = '#AAA';
     context.stroke();
+
 </script>
 
 </body>
